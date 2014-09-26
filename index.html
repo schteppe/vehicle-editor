@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Vehicle editor - Goo Create</title>
+<title>Cannon.js Vehicle editor - Goo Create</title>
 <script>
 // If you try to load a scene without a server, you're gonna have a bad time
 if (window.location.protocol==='file:') {
@@ -71,10 +71,30 @@ if (window.location.protocol==='file:') {
 <script src="lib/dat.gui.js"></script>
 <script src="js/loadScene.js"></script>
 
+<style>
+#demo-info {
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 1000;
+	padding:10px;
+	font-family: Helvetica,sans-serif;
+	color:white;
+	text-align: center;
+	font-size: 12px;
+}
+#demo-info a {
+	color:white;
+	text-decoration: none;
+}
+</style>
 
 </head>
 
 <body >
+		<div id="demo-info">
+			Cannon.js vehicle editor by <a href="http://twitter.com/schteppe">@schteppe</a>
+		</div>
 	<div id="goo-loading-overlay">
 		<div id="goo-loading-message">
 			<h2>Loading project</h2>

@@ -1,3 +1,6 @@
+/**
+ * By schteppe
+ */
 require([
 	'goo/entities/GooRunner',
 	'goo/animationpack/systems/AnimationSystem',
@@ -247,7 +250,7 @@ require([
 			cannonVehicle.world.gravity.y = g;
 		});
 
-		gui.add(demo, 'radius').min(0.0001).max(1).onChange(function(r){
+		gui.add(demo, 'radius').min(0.0001).max(0.5).onChange(function(r){
 			demo.set('radius', r);
 		});
 		gui.add(demo, 'stiffness').min(0).max(500).onChange(function(s){
