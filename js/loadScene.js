@@ -77,7 +77,7 @@ require([
 			gravity: new Vector3(0, -10, 0)
 		});
 		gooRunner.world.setSystem(cannonSystem);
-		cannonSystem.world.defaultContactMaterial.friction = 0.0001;
+		cannonSystem.world.defaultContactMaterial.friction = 0.001;
 
 		var chassisEntity = gooRunner.world.by.name('Chassis').first();
 		var wheelLFEntity = gooRunner.world.by.name('Wheel_LF').first();
