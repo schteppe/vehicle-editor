@@ -75,8 +75,8 @@ require([
 	var show = true;
 	function setup(gooRunner, loader) {
 		var cannonSystem = new CannonSystem({
-			maxSubSteps: 3,
-			stepFrequency: 120,
+			maxSubSteps: 20,
+			stepFrequency: 60,
 			gravity: new Vector3(0, -10, 0)
 		});
 		gooRunner.world.setSystem(cannonSystem);
