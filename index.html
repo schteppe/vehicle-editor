@@ -92,6 +92,10 @@ if (window.location.protocol==='file:') {
 </head>
 
 <body >
+
+<!-- Fixes the "setVelocity" error in goo engine -->
+<script>PannerNode.prototype.setVelocity = AudioListener.prototype.setVelocity = function(){};</script>
+
 		<div id="demo-info">
 			Cannon.js vehicle editor by <a href="http://twitter.com/schteppe">@schteppe</a>
 		</div>
